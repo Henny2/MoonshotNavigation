@@ -9,26 +9,30 @@ import SwiftUI
 
 struct ListMissionsView: View {
     let missions: [Mission]
-    let astronauts: [String:Astronaut]
+    var astronauts: [String:Astronaut]
     var body: some View {
         NavigationStack{
             
             // fix the divider lines, follow this: https://www.hackingwithswift.com/quick-start/swiftui/composing-views-to-create-a-list-row
-            List {
-                ForEach(missions){ mission in
-                    NavigationLink{
-                        MissionView(mission: mission, astronauts: astronauts)
-                    } label: {
-                        MissionListItem(mission: mission)
-                    }.alignmentGuide(.listRowSeparatorLeading) { dimension in
-                        return 0
+            List(missions) { mission in
+//                ForEach(missions){ mission in
+                    NavigationLink(value: mission){
+                        Text("This is the label of \(mission.displayName)")
                     }
-                }.listRowBackground(Color.lightBackground)
-            }.scrollContentBackground(.hidden)
-                
+                }
+                .navigationDestination(for: Mission.self){ mission in
+//                    Text("you selected \(mission.displayName)")
+//                    MissionView(mission: mission, astronauts: astronauts)
+                    MissionView(mission: mission)
+//                    NavViewTest(inp1: "hi", inp2: 2)
+//                        MissionListItem(mission: mission)
+                    
+                }
+            }
+
         }
     }
-}
+//}
 
 #Preview {
     let missions: [Mission] = Bundle.main.decode("missions.json")

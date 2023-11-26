@@ -23,6 +23,7 @@
 		40C5604B2B0B1292009E887D /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5604A2B0B1292009E887D /* AstronautView.swift */; };
 		40C5604D2B0B12AE009E887D /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5604C2B0B12AE009E887D /* Color-Theme.swift */; };
 		40C5604F2B0B12C4009E887D /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5604E2B0B12C4009E887D /* Mission.swift */; };
+		40C560712B12C72B009E887D /* NavViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C560702B12C72B009E887D /* NavViewTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		40C5604A2B0B1292009E887D /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
 		40C5604C2B0B12AE009E887D /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
 		40C5604E2B0B12C4009E887D /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		40C560702B12C72B009E887D /* NavViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				40C560422B0B122F009E887D /* MissionListItem.swift */,
 				40C560442B0B1247009E887D /* GridMissionsView.swift */,
 				40C560462B0B1266009E887D /* MissionView.swift */,
+				40C560702B12C72B009E887D /* NavViewTest.swift */,
 				40C560482B0B1283009E887D /* DividerView.swift */,
 				40C5604A2B0B1292009E887D /* AstronautView.swift */,
 				40C5604C2B0B12AE009E887D /* Color-Theme.swift */,
@@ -187,6 +190,7 @@
 				40C5602D2B0B0E54009E887D /* ContentView.swift in Sources */,
 				40C5602B2B0B0E54009E887D /* MoonshotNavigationApp.swift in Sources */,
 				40C5603B2B0B1039009E887D /* Bundle-Decodable.swift in Sources */,
+				40C560712B12C72B009E887D /* NavViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
